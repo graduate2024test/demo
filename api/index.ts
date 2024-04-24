@@ -26,13 +26,13 @@ app.use( express.static(path.join(process.cwd(), `public`)) );
 
 /* ********************************************* */
 /* *********************************** ROUTING   */
-app.get("/", (req, res) => res.send("BACKSLASH"));
+app.get("/", (req, res) => res.render(`map.ejs`));
 
 app.get("/map", (req, res) => res.render(`map.ejs`));
 
 app.get("/room", (req, res) => res.render(`room.ejs`));
 
-app.get("/timetable", (req, res) => res.render(`timetable.ejs`));
+app.get("/timetable", (req, res) => res.render(`ttable.ejs`));
 
 app.listen(port, () => console.log("LISTEN 3000."));
 
