@@ -13,11 +13,11 @@ const port = 3000;
 /* *********************************** ROUTING ***/
 app.get("/", (req, res) => res.send("BACKSLASH"));
 
-app.get("/map", (req, res) => res.send("MAP"));
+app.get("/map", (req, res) => res.render(`map.ejs`));
 
-app.get("/room", (req, res) => res.send("ROOM"));
+app.get("/room", (req, res) => res.render(`room.ejs`));
 
-app.get("/timetable", (req, res) => res.send("TIMETABLE"));
+app.get("/timetable", (req, res) => res.render(`timetable.ejs`));
 
 app.listen(port, () => console.log("LISTEN 3000."));
 
