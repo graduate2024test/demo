@@ -9,6 +9,7 @@ const app = express();
 const port = 3000;
 
 
+
 /* ********************************************* */
 /* *********************************** FUNCTIONS */
 
@@ -18,6 +19,8 @@ const port = 3000;
 /* *********************************** METHODS   */
 app.set('views', path.join(process.cwd(), `views`));
 app.set('view engine', 'ejs');
+
+app.use( express.static(path.join(process.cwd(), `public`)) );
 
 
 
