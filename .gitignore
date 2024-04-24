@@ -1,1 +1,6 @@
 git-bash.exe.lnk
+vercel_deploy.url
+_start.bat
+node_modules/
+package-lock.json
+v_localhost.url
